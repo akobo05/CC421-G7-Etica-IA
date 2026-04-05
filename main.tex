@@ -1,0 +1,92 @@
+% ============================================================
+% CC421 - Inteligencia Artificial
+% Tarea-1 PC-1: Fundamentos Éticos en la IA a través de la Filosofía
+% Grupo 7 - Kant, Bentham y Mill
+% Formato: IEEE doble columna, Times New Roman 10pt
+% Referencias: APA 7ma edición
+% ============================================================
+
+\documentclass[10pt,twocolumn,letterpaper]{IEEEtran}
+
+% --- Codificación y Fuente ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}                  % Times New Roman
+\usepackage[spanish]{babel}
+
+% --- Matemáticas y Símbolos ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --- Gráficos y Tablas ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+
+% --- Referencias APA 7 con natbib ---
+\usepackage{natbib}
+\bibliographystyle{apalike}         % Estilo APA (Author, Year)
+
+% --- Microtipos y Espaciado ---
+\usepackage{microtype}
+\usepackage{setspace}
+
+% --- Hipervínculos ---
+\usepackage[hidelinks]{hyperref}
+
+% --- Configuración de márgenes IEEEtran ---
+% IEEEtran gestiona márgenes automáticamente
+
+% ============================================================
+% PORTADA / TÍTULO
+% ============================================================
+\title{\textbf{El Imperativo Categórico frente al Cálculo Utilitarista:\\
+Kant, Bentham y Mill en la Arquitectura Ética de la Inteligencia Artificial}}
+
+\author{
+  \IEEEauthorblockN{Grupo 7 --- CC421 Inteligencia Artificial}\\
+  \IEEEauthorblockA{
+    Escuela Profesional de Ciencia de la Computación\\
+    Universidad [Nombre de la Universidad]\\
+    \textit{\{integrante1, integrante2, integrante3, integrante4, integrante5, integrante6\}@universidad.edu}
+  }
+}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+El despliegue masivo de sistemas de inteligencia artificial (IA) en contextos de decisión crítica ---vehículos autónomos, sistemas de justicia predictiva, asistentes médicos--- convierte el problema del carro desbocado (\textit{trolley problem}) en una realidad de ingeniería. Este artículo analiza y confronta críticamente los marcos éticos de Immanuel Kant, Jeremy Bentham y John Stuart Mill como fundamentos filosóficos para el diseño de arquitecturas de decisión en IA. Se argumenta que el imperativo categórico kantiano y el cálculo utilitarista benthamita representan blueprints arquitectónicos irreconciliables: mientras el utilitarismo optimiza resultados agregados al costo potencial de instrumentalizar individuos, la deontología kantiana preserva la dignidad absoluta al riesgo de parálisis decisional. La síntesis milleana, si bien más rica, revela una inconsistencia interna al introducir distinciones cualitativas que erosionan el cálculo cuantitativo benthamita. El caso del sistema Autopilot de Tesla (2016) ilustra cómo estas tensiones filosóficas se materializan en consecuencias fatales. Se concluye que ningún sistema de IA puede ser moralmente neutro y que la elección del marco ético es en sí misma un acto moral que exige deliberación democrática y responsabilidad profesional explícita.
+\end{abstract}
+
+\begin{IEEEkeywords}
+deontología, utilitarismo, imperativo categórico, vehículos autónomos, ética en IA, Kant, Bentham, Mill, toma de decisiones críticas.
+\end{IEEEkeywords}
+
+% ============================================================
+% SECCIONES
+% ============================================================
+
+\input{sections/01_introduccion}
+
+\input{sections/02_desarrollo_conceptual}
+
+\input{sections/03_aplicacion_critica}
+
+\input{sections/04_caso_real}
+
+\input{sections/05_critica_impacto}
+
+\input{sections/06_conclusion}
+
+% ============================================================
+% REFERENCIAS
+% ============================================================
+\bibliography{references}
+
+\end{document}

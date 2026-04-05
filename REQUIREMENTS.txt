@@ -1,0 +1,45 @@
+REQUISITOS — CC421 Grupo 7
+==========================
+
+Distribución LaTeX recomendada
+--------------------------------
+  Linux:   TeX Live
+    sudo apt install texlive-full
+
+  Windows: MiKTeX
+    https://miktex.org/download
+    (instalar paquetes faltantes automáticamente al compilar)
+
+  Mac:     MacTeX
+    https://www.tug.org/mactex/
+
+Paquetes LaTeX necesarios (incluidos en texlive-full)
+------------------------------------------------------
+  - IEEEtran      (clase del documento)
+  - times         (fuente Times New Roman)
+  - natbib        (citas APA)
+  - babel (spanish)
+  - inputenc / fontenc
+  - microtype
+  - hyperref
+  - amsmath / amssymb
+  - booktabs / tabularx
+  - graphicx
+
+Compilación
+-----------
+  Opción 1 (recomendada):
+    make
+
+  Opción 2 (manual):
+    pdflatex main.tex
+    bibtex main
+    pdflatex main.tex
+    pdflatex main.tex
+
+  El PDF resultante es: main.pdf
+
+Editor recomendado
+------------------
+  - VS Code + extensión "LaTeX Workshop"
+  - Overleaf (online, sin instalar nada — subir todos los archivos)

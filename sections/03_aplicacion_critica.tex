@@ -1,0 +1,52 @@
+% ============================================================
+% SECCIÓN 3: APLICACIÓN A LA IA Y CRÍTICA CRUZADA
+% ============================================================
+
+\section{Aplicación a la IA y Crítica Cruzada}
+\label{sec:aplicacion}
+
+\subsection{Arquitecturas de Decisión bajo Cada Marco}
+
+\subsubsection{Arquitectura Kantiana}
+
+Un sistema de IA diseñado bajo el imperativo categórico operaría según restricciones deontológicas absolutas: ningún individuo puede ser instrumentalizado para beneficio de otros, independientemente del tamaño de ese beneficio. Para un vehículo autónomo (VA), esto implicaría que el sistema no puede contener lógica explícita del tipo ``sacrificar al peatón para salvar a cinco pasajeros'', pues dicha máxima viola la Fórmula de la Humanidad \citep{mougan2024kantian}.
+
+La prueba de universalizabilidad ofrece un criterio operacional: ¿puede la máxima ``el vehículo dañará al individuo más vulnerable para minimizar el total de víctimas'' convertirse en ley universal? No puede: en un mundo donde todos los VA operen bajo esta regla, ningún peatón podría confiar en que el VA respetará su vida, destruyendo el contrato social de movilidad sobre el que descansa el sistema de transporte. La máxima se autodestruye al universalizarse.
+
+La limitación es severa: en escenarios donde toda opción disponible daña a alguien, la arquitectura kantiana podría producir \textit{parálisis decisional}, lo que en la práctica equivale a una decisión aleatoria o a mantener el curso actual ---con consecuencias potencialmente peores.
+
+\subsubsection{Arquitectura Benthamita}
+
+El cálculo felicífico ofrece un algoritmo de decisión aparentemente preciso: asignar valores numéricos a la probabilidad e intensidad del daño para cada posible víctima en cada escenario y ejecutar la acción que minimiza el daño total ponderado. Esta lógica es la que subyace implícitamente a la mayoría de los sistemas de VA actuales \citep{liu2021selfish}.
+
+El experimento Moral Machine de \citet{awad2018moral}, con 40 millones de decisiones de 2.3 millones de personas en 233 países, revela que las preferencias humanas en dilemas de VA exhiben variación cultural significativa: algunas culturas priorizan al peatón, otras al pasajero; algunas valoran la edad (preferir salvar jóvenes), otras la estatura social. Esto refuta el supuesto benthamita de una función de utilidad universal y objetiva: la ``métrica única'' que requiere el cálculo no existe empíricamente.
+
+\subsubsection{Arquitectura Milleana}
+
+El utilitarismo de regla de Mill propone un punto intermedio: diseñar reglas de comportamiento del VA cuya observancia sistemática maximice la utilidad a largo plazo, en lugar de calcular caso a caso. El principio del daño operacionaliza una restricción asimétrica: el VA debe evitar activamente el daño a terceros no consentientes (peatones), incluso a costo de mayor riesgo para el ocupante.
+
+Esta arquitectura produce sistemas más predecibles y generadores de confianza social ---un bien de utilidad de orden superior en términos millesianos--- que el cálculo benthamita caso a caso, que puede generar comportamientos incoherentes e imprevisibles.
+
+\subsection{Crítica Cruzada entre los Tres Filósofos}
+
+\subsubsection{Kant contra Bentham: Dignidad vs. Dictadura Mayoritaria}
+
+La tensión es estructural e irreducible. Para Kant, el cálculo benthamita comete el error fundamental de tratar a los individuos como variables en una ecuación de bienestar colectivo: el peatón sacrificado por el VA utilitarista ha sido usado como \textit{medio} para salvar a otros, violando su condición de fin en sí mismo \citep{mishra2025moral}. Esto constituye, en términos kantianos, una dictadura de la mayoría: la aritmética del mayor número aplasta la incondicionalidad de los derechos individuales.
+
+Bentham respondería que la absolutidad kantiana es moralmente irresponsable: negarse a optimizar cuando se puede hacerlo tiene consecuencias reales. Elegir no salvar a cinco para no ``usar'' a uno es, en términos de resultado, elegir que mueran cinco. La inacción también es una elección moral y sus consecuencias pesan igual que las de la acción. Kant replicaría que este argumento confunde la evaluación de acciones (deontológica) con la evaluación de estados del mundo (consecuencialista): un acto puede ser moralmente correcto aunque sus consecuencias sean peores, porque la moralidad no se mide en consecuencias.
+
+Esta controversia es genuinamente irresoluble dentro de un marco lógico único, porque los dos sistemas no comparten el mismo criterio de evaluación moral.
+
+\subsubsection{Kant contra Mill: Convergencias y Divergencias}
+
+La convergencia superficial es engañosa. El principio del daño de Mill y la Fórmula de la Humanidad de Kant producen restricciones similares: ambos limitan lo que puede hacerse a un individuo sin su consentimiento. Sin embargo, sus fundamentos son opuestos. Para Kant, esta restricción es \textit{categórica}: proviene de la razón pura y no admite excepciones por resultados. Para Mill, es \textit{hipotética}: vale porque maximiza la utilidad social a largo plazo. Si en algún escenario concreto violar el principio del daño produjera más utilidad, el milleanismo tendría que admitirlo, cosa que el kantismo rechaza.
+
+\citet{valeriyivna2025could} señalan que la inteligencia artificial no puede satisfacer los requisitos kantianos de agencia moral, pues carece de la unidad transcendental de la apercepción que funda la autonomía racional. Pero Mill no exige agencia moral del sistema: solo exige que sus reglas produzcan los mejores resultados. Esta diferencia epistemológica es crucial para el diseño: el kantismo exige que el diseñador garantice la dignidad individual como restricción, mientras que el milleanismo exige que garantice la elección de reglas óptimas.
+
+\subsubsection{Bentham contra Mill: La Fractura Interna del Utilitarismo}
+
+La crítica más devastadora a Bentham no proviene de Kant sino del propio Mill. Al introducir la distinción cualitativa de placeres, Mill destruye el fundamento matemático del cálculo felicífico. Si ``el placer de la filosofía'' no es conmensurable con ``el placer del pushpin'' en una escala única, no pueden sumarse. La métrica universal de Bentham ---condición sine qua non del cálculo algorítmico--- se fragmenta.
+
+Este conflicto interno es filosóficamente significativo para la IA: revela que Mill intuitivamente reconoce que la \textit{dignidad humana} posee un valor que resiste la cuantificación, aproximándose a la intuición kantiana. Al introducir placeres ``superiores'' vinculados a la autonomía y la razón, Mill importa un residuo deontológico en su sistema. \citet{mougan2024kantian} demuestran empíricamente que los sistemas de IA que adoptan métricas puramente cuantitativas de equidad (Bentham) producen peores resultados de justicia que aquellos que incorporan restricciones cualitativas sobre dignidad individual (Mill-Kant).
+
+Bentham respondería que la distinción cualitativa de Mill es elitista y arbitraria: ¿quién decide qué placeres son superiores? Introducir una jerarquía de valores socava el principio democrático de que cada individuo cuenta como uno y nadie como más de uno. Esta crítica benthamita a Mill señala un riesgo real en sistemas de IA que asignan diferentes pesos a diferentes tipos de bienestar: la jerarquía de valores puede reproducir discriminaciones existentes.
